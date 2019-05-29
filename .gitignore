@@ -1,0 +1,10 @@
+
+# Temporary and log files
+*.log
+*.out
+*.tmp
+*.err
+*.bak
+
+# Packages
+*.zip
