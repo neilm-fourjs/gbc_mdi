@@ -1,7 +1,13 @@
 {
-  "themes": [{
+  "themes": [
+    {
+      "name": "ur_default",
+      "title": "UR Default",
+      "uses": ["platform/ur", "colors/ur", "common"]
+    },
+		{
       "name": "default",
-      "title": "Default Light",
+      "title": "Default",
       "uses": ["platform/desktop"]
     },
     {
@@ -18,11 +24,6 @@
       "name": "highcontrast_mobile",
       "title": "High contrast",
       "uses": ["platform/browser", "platform/mobile", "colors/highcontrast", "common"]
-    },
-    {
-      "name": "ur_default",
-      "title": "Default",
-      "uses": ["platform/ur", "platform/desktop", "common"]
     },
     {
       "name": "ur_highcontrast",
