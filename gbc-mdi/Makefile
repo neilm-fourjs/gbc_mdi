@@ -14,7 +14,7 @@ theme/common:
 
 # Create a symbolic link to our custom gbc files
 $(GBCBASE)/gbc-$(PACKVER)/customization/$(CUSTOMNAME): 
-	ln -s $(PWD) $@
+	ln -fs $(PWD) $@
 
 # Build our custom gbc
 $(GBCBASE)/gbc-$(PACKVER)/dist/$(CUSTOMNAME): $(GBCBASE)/gbc-$(PACKVER) $(GBCBASE)/gbc-$(PACKVER)/customization/$(CUSTOMNAME)
@@ -30,6 +30,6 @@ $(TARGET): $(GBCBASE)/gbc-$(PACKVER)/dist/$(CUSTOMNAME)
 dev:
 	cd $(GBCBASE)/gbc-$(PACKVER) && grunt --customization=customization/$(CUSTOMNAME) dev
 
-deploy:
-	cd ../distbin && ./deploy_gbc.sh
+deploy: all
+	cd ../distbin && ./deploy_gbc.sh 0
 

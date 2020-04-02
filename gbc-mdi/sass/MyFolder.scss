@@ -4,12 +4,43 @@
 }
 
 .mt-tab-items[__FolderWidget] {
-	padding: 4px;
+	padding: 3px;
+}
+
+.mt-tab-previous, .mt-tab-next {
+	width: 24px;
+	fill: $theme-primary-color;
+	opacity: 1;
+	transition: none;
+}
+
+.mt-tab-previous.overflown-previous, .mt-tab-next.overflown-next {
+	fill: $theme-primary-faded-background-color;
+	color: $theme-primary-faded-background-color;
+	opacity: 1;
+}
+
+.gbc_PageTitleWidget {
+	flex: 1 1 auto;
+	max-width: 200px;
+}
+
+.mt-tab-titles-container[__FolderWidget=top] {
+	flex: 1 1 auto;
+}
+
+.mt-tab-titles-bar[__FolderWidget=top], .mt-tab-titles-bar[__FolderWidget=bottom] {
+	flex-direction: row;
 }
 
 .gbc_TabbedContainerWidget > .mt-tabs > .mt-tab-items > .mt-tab-items-container {
 	margin: 2px;
 	padding: 4px;
+}
+
+.gbc_PageTitleWidget > .gbc_ImageWidget {
+	margin-right: 2px;
+	max-width: 25px;
 }
 
 .gbc_TabbedContainerWidget > .mt-tabs > .mt-tab-titles-bar {
@@ -18,6 +49,12 @@
 	fill: $theme-primary-color;
 	line-height: 30px;
 	padding: 0px;
+}
+
+.gbc_TabbedContainerWidget > .mt-tabs > .mt-tab-titles-bar .mt-tab-title-text {
+//	max-width: 120px;
+	min-width: 20px;
+	width: -webkit-fill-available;
 }
 
 .mt-tab-titles-container[__FolderWidget=top] .mt-tab-title.mt-tab-current {
