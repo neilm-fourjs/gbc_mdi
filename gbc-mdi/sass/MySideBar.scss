@@ -41,6 +41,7 @@
 }
 
 .gbc_StartMenuWidget {
+	background-color: $theme-primary-emphasis-background-color;
 	color: $theme-primary-faded-background-color;
 	fill: $theme-primary-faded-background-color;
 }
@@ -49,4 +50,8 @@
 	border-bottom: 1px solid $theme-primary-faded-background-color;
 	font-weight: 700;
 	font-size: 14px;
+}
+
+.gbc_RSidebarWidget {
+	display: none;
 }
